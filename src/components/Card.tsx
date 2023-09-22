@@ -28,6 +28,7 @@ export const Card: FC<Props> = ({ tipeSelected }) => {
             <li>
                 <strong>Life:</strong> {attributes.life}
               </li>
+              
               <li>
                 <strong>Attack:</strong> {attributes.attack}
               </li>
