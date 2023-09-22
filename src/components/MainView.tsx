@@ -1,12 +1,9 @@
 import { usePokemonStore } from "../stores/pokemon/pokemonStore";
+import { Card } from "./Card";
+
 const MainView = () => {
   const { pokemons } = usePokemonStore();
-  return (
-    <>
-      <h1>Main</h1>
-      {JSON.stringify(pokemons, null, 2)}
-    </>
-  );
+  return <Card tipeSelected={pokemons} />;
 };
 
 export default MainView;

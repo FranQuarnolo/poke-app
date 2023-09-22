@@ -10,14 +10,14 @@ const Sidebar: FC<Props> = ({ pokemonTypes, setSelectedType }) => {
     setSelectedType(type);
   };
   return (
-    <div className="flex flex-col gap-0">
+    <div className="w-full gap-1 bg-black">
       {pokemonTypes.map((type) => (
         <button
           key={type}
-          className="m-1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded "
+          className="m-1 bg-red-500 hover:bg-yellow-400 text-white font-bold py-1 px-2 rounded "
           onClick={() => handleChangeType(type)}
         >
-          {type}
+          <p className="capitalize">{type}</p>
         </button>
       ))}
     </div>
